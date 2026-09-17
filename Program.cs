@@ -6,7 +6,7 @@ namespace G_ASP_NET_99_OOP_03
 {
     internal class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             #region first question 
             //a)  What is the difference between Method Overloading and Method Overriding?
@@ -38,6 +38,34 @@ namespace G_ASP_NET_99_OOP_03
             //No.A sealed method(used with override) stops the overriding chain 
             //no subclass further down can override it again.
             #endregion
+
+
+
+
+            #region  question3 partical 
+            //Driver driver = new Driver("D001", "Ahmed Mohamed", "0100000000");
+
+            //DeliveryCenter center = new DeliveryCenter("Cairo Center");
+            //center.Driver = driver;
+
+            //DeliveryAddress addr1 = new DeliveryAddress("Street 1", "Cairo", "Egypt");
+            //StandardShipment standard = new StandardShipment("SH001", "Laptop", 3, 80, addr1);
+
+            //DeliveryAddress addr2 = new DeliveryAddress("Street 2", "Giza", "Egypt");
+            //ExpressShipment express = new ExpressShipment("SH002", "Mobile Phone", 2, 60, addr2, 30);
+
+            //DeliveryAddress addr3 = new DeliveryAddress("Street 3", "Berlin", "Germany");
+            //InternationalShipment international = new InternationalShipment("SH003", "Television", 8, 120, addr3, "Germany", 100);
+
+            //center.AddShipment(standard);
+            //center.AddShipment(express);
+            //center.AddShipment(international);
+
+            //center.PrintAllShipments();
+
+            //Console.WriteLine("Printing Using DeliveryHelper...");
+            #endregion
+
 
         }
     }
