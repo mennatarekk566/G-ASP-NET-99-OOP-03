@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Xml.Linq;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace G_ASP_NET_99_OOP_03
 {
@@ -18,9 +19,26 @@ namespace G_ASP_NET_99_OOP_03
             //with the exact same signature.It's decided at run time
 
             //b)  What is the difference between Static Binding and Dynamic Binding?
-             // Static binding is when the compiler decides which method to call at compile time
-             //Dynamic binding is when the method to call is decided at run time, based on the actual object
-         #endregion
+            // Static binding is when the compiler decides which method to call at compile time
+            //Dynamic binding is when the method to call is decided at run time, based on the actual object
+            #endregion
+
+
+
+            #region question2
+            //a)  What is the purpose of the sealed keyword when applied to a class?
+            //It stops other classes from inheriting from it. Once a class is sealed, it can't be a base class anymore.
+
+            //b)  What is the difference between a sealed class and a sealed method?
+            //A sealed method only blocks further overriding of that one method, 
+            //in a class that itself can still be inherited normally.
+
+
+            //c)Can a sealed method be overridden? Why?
+            //No.A sealed method(used with override) stops the overriding chain 
+            //no subclass further down can override it again.
+            #endregion
+
         }
     }
 }
